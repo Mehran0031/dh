@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Digital Harmony Studio</title>
+    <style>
+        /* LaTeX-inspired styling */
+        @import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif:wght@400;700&family=Latin+Modern+Roman:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Computer Modern Serif', 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            padding: 2.5cm;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        /* Title page styling */
+        .title-page {
+            text-align: center;
+            margin-bottom: 3cm;
+            page-break-after: always;
+        }
+        
+        .main-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 1cm;
+            text-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #3b82f6;
+            margin-bottom: 0.5cm;
+            font-weight: bold;
+        }
+        
+        .tagline {
+            font-size: 1.1em;
+            color: #6b7280;
+            margin-bottom: 2cm;
+            font-style: italic;
+        }
+        
+        .effective-date {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 1cm;
+            border-radius: 8px;
+            margin: 2cm 0;
+            box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1);
+        }
+        
+        .snapchat-notice {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1f2937;
+            padding: 1cm;
+            border-radius: 8px;
+            margin: 2cm 0;
+            border-left: 4px solid #f97316;
+            box-shadow: 0 4px 6px rgba(251, 191, 36, 0.1);
+        }
+        
+        .contact-info {
+            color: #6b7280;
+            font-weight: bold;
+            margin-top: 2cm;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background-color: #f8f9fa;
+            padding: 1.5cm;
+            border-radius: 8px;
+            margin: 2cm 0;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .toc h2 {
+            color: #3b82f6;
+            margin-bottom: 1cm;
+            font-size: 1.3em;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            margin: 0.3cm 0;
+            padding-left: 1cm;
+        }
+        
+        .toc a {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Headers */
+        h1 {
+            font-size: 1.8em;
+            color: #3b82f6;
+            margin: 2cm 0 1cm 0;
+            padding-bottom: 0.3cm;
+            border-bottom: 2px solid #3b82f6;
+            page-break-before: auto;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            color: #6366f1;
+            margin: 1.5cm 0 0.8cm 0;
+            font-weight: bold;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+            color: #8b5cf6;
+            margin: 1cm 0 0.5cm 0;
+            font-weight: bold;
+        }
+        
+        /* Paragraphs */
+        p {
+            margin-bottom: 0.8cm;
+            text-align: justify;
+            text-indent: 0;
+        }
+        
+        /* Special boxes */
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
+            border: 1px solid #6366f1;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #6366f1;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        .snapchat-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 2px 4px rgba(245, 158, 11, 0.1);
+        }
+        
+        .ai-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+        }
+        
+        .rights-box {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+            border: 1px solid #8b5cf6;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #8b5cf6;
+            box-shadow: 0 2px 4px rgba(139, 92, 246, 0.1);
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin: 0.5cm 0 0.8cm 2cm;
+        }
+        
+        li {
+            margin-bottom: 0.3cm;
+        }
+        
+        /* Links */
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Email styling */
+        .email {
+            font-weight: bold;
+            color: #6366f1;
+            background-color: #f0f9ff;
+            padding: 0.1cm 0.3cm;
+            border-radius: 4px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 3cm;
+            padding-top: 1cm;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                max-width: none;
+                margin: 0;
+                padding: 2cm;
+            }
+            
+            .title-page {
+                page-break-after: always;
+            }
+            
+            h1 {
+                page-break-before: auto;
+                page-break-after: avoid;
+            }
+            
+            .highlight-box, .snapchat-box, .ai-box, .rights-box {
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 1cm;
+                font-size: 10pt;
+            }
+            
+            .main-title {
+                font-size: 2em;
+            }
+            
+            .subtitle {
+                font-size: 1.3em;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Page -->
+    <div class="title-page">
+        <h1 class="main-title">Privacy Policy</h1>
+        <h2 class="subtitle">Digital Harmony Studio</h2>
+        <p class="tagline">AI-Powered Music Generation & Distribution Platform</p>
+        
+        <div class="effective-date">
+            <strong>Effective Date: December 21, 2024</strong><br>
+            <strong>Last Updated: December 21, 2024</strong>
+        </div>
+        
+        <div class="snapchat-notice">
+            <strong>🔒 Snapchat Integration Compliance Notice</strong><br><br>
+            This privacy policy has been specifically designed to comply with Snapchat's developer requirements and privacy standards. We integrate with Snapchat's Creative Kit and Login Kit to enhance your music sharing experience while maintaining the highest privacy standards.
+        </div>
+        
+        <div class="contact-info">
+            <strong>Contact:</strong> <span class="email">Digital.Harmony.Studio@icmoil.com</span>
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">1. Introduction and Our Commitment</a></li>
+            <li><a href="#information-collect">2. Information We Collect</a></li>
+            <li><a href="#how-we-use">3. How We Use Your Information</a></li>
+            <li><a href="#information-sharing">4. Information Sharing and Disclosure</a></li>
+            <li><a href="#data-security">5. Data Security and Protection</a></li>
+            <li><a href="#privacy-rights">6. Your Privacy Rights and Controls</a></li>
+            <li><a href="#snapchat-specific">7. Snapchat-Specific Privacy Considerations</a></li>
+            <li><a href="#international-transfers">8. International Data Transfers</a></li>
+            <li><a href="#children-privacy">9. Children's Privacy</a></li>
+            <li><a href="#cookies">10. Cookies and Tracking Technologies</a></li>
+            <li><a href="#policy-changes">11. Changes to This Privacy Policy</a></li>
+            <li><a href="#contact">12. Contact Information and Data Protection</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <h1 id="introduction">1. Introduction and Our Commitment</h1>
+    
+    <p>Welcome to Digital Harmony Studio's Privacy Policy. We are committed to protecting your privacy and being transparent about how we collect, use, and share your information. This policy explains our privacy practices for our AI-powered music generation and distribution platform, including our integrations with social media platforms like Snapchat, Instagram, Facebook, Twitter, TikTok, and music streaming services.</p>
+    
+    <div class="highlight-box">
+        <strong>Our Privacy Philosophy:</strong> We believe that privacy is a fundamental right. We collect only the information necessary to provide and improve our services, and we give you control over your data. We never sell your personal information to third parties.
+    </div>
+    
+    <p>Our commitment extends beyond mere compliance with privacy regulations. We have designed our platform with privacy-by-design principles, ensuring that data protection is integrated into every aspect of our service architecture. This comprehensive approach means that privacy considerations are embedded in our AI algorithms, data processing workflows, and user interface design from the ground up.</p>
+    
+    <p>We understand that trust is earned through consistent action and transparency. Therefore, we provide clear explanations of our data practices, offer meaningful choices about your information, and maintain robust security measures to protect your data. Our privacy practices are regularly reviewed and updated to reflect evolving privacy standards and user expectations.</p>
+
+    <h1 id="information-collect">2. Information We Collect</h1>
+    
+    <p>We collect information in several ways to provide you with our AI music generation and distribution services. The information we collect falls into carefully defined categories, each serving specific purposes in delivering and improving our services.</p>
+    
+    <h2>2.1 Information You Provide Directly</h2>
+    
+    <p>When you interact with our platform, you provide various types of information that enable us to deliver personalized music generation and distribution services.</p>
+    
+    <h3>Account Information</h3>
+    <p>Your account information forms the foundation of your Digital Harmony Studio experience. This includes your name and email address, which serve as your primary identifiers within our system. We collect your username and password to secure your account access, along with profile information and preferences that help us customize your experience. Contact information enables us to communicate important service updates and respond to your inquiries.</p>
+    
+    <p>We also collect information about your music creation preferences, including your preferred genres, typical track specifications, and creative requirements. This information is crucial for our AI algorithms to generate music that aligns with your artistic vision and style preferences.</p>
+    
+    <h3>Music Creation Data</h3>
+    <p>The heart of our service revolves around understanding your creative intentions and translating them into high-quality music content. We collect detailed information about your music genre preferences, which helps our AI models understand the stylistic elements you favor. Track specifications and requirements provide technical parameters that guide the generation process, ensuring the output meets your specific needs.</p>
+    
+    <p>Creative prompts and descriptions you provide are analyzed by our natural language processing systems to understand the emotional tone, narrative elements, and artistic direction you want to achieve. The generated music content itself becomes part of your creative portfolio within our platform, stored securely and accessible according to your preferences.</p>
+    
+    <h2>2.2 Information We Collect Automatically</h2>
+    
+    <p>Our platform automatically collects certain information to ensure optimal performance, security, and user experience. This automated collection is designed to be minimally intrusive while providing the necessary data for service improvement.</p>
+    
+    <div class="highlight-box">
+        <strong>Usage Analytics:</strong> We collect information about how you use our platform, including pages visited, features used, time spent, and interaction patterns. This helps us improve our AI algorithms and user experience.
+    </div>
+    
+    <p>Device information, including your device type, operating system, and browser details, helps us optimize our platform's performance across different technical environments. IP address and location data, collected only with your consent, enable us to provide region-appropriate services and comply with local regulations.</p>
+    
+    <h2>2.3 Information from Third-Party Integrations</h2>
+    
+    <p>When you choose to connect your accounts from other platforms, we may receive specific information that enhances your Digital Harmony Studio experience while respecting the privacy policies of those platforms.</p>
+    
+    <div class="snapchat-box">
+        <strong>Snapchat Integration:</strong> Through Snapchat's Login Kit and Creative Kit, we may receive your display name, Bitmoji avatar, and sharing permissions. This integration is designed to comply fully with Snapchat's privacy requirements and developer guidelines. We only access the minimum information necessary to provide the integration functionality you've requested.
+    </div>
+    
+    <div class="ai-box">
+        <strong>🤖 AI and Machine Learning Data Usage</strong><br><br>
+        Our AI music generation system processes your creative inputs to generate personalized music content. This includes:
+        <ul>
+            <li>Analysis of your music preferences and style choices</li>
+            <li>Processing of text prompts and creative descriptions</li>
+            <li>Learning from your feedback to improve future generations</li>
+            <li>Aggregated usage patterns to enhance our AI models</li>
+        </ul>
+        <strong>Important:</strong> Your individual creative inputs are not shared with other users, and we implement privacy-preserving techniques in our AI training processes.
+    </div>
+
+    <h1 id="how-we-use">3. How We Use Your Information</h1>
+    
+    <p>We use the information we collect for specific, clearly defined purposes that directly relate to providing and improving our services. Our data usage practices are designed to be transparent, purposeful, and aligned with your expectations as a user of our platform.</p>
+    
+    <h2>3.1 Core Service Provision</h2>
+    
+    <p>The primary use of your information is to deliver the core functionality of Digital Harmony Studio. AI music generation represents the heart of our service, where we process your creative prompts, preferences, and specifications to generate personalized music content that meets your artistic vision.</p>
+    
+    <p>Platform distribution functionality utilizes your account information and distribution preferences to automatically publish your generated music to your selected streaming and social media platforms. This automated process saves you time while ensuring consistent and strategic content distribution across multiple channels.</p>
+    
+    <h2>3.2 Service Improvement and Personalization</h2>
+    
+    <p>We analyze usage patterns and user feedback to continuously improve our AI algorithms and overall platform functionality. This analysis helps us understand which features are most valuable to our users and where we can make improvements to enhance the user experience.</p>
+    
+    <p>Personalization efforts focus on tailoring your Digital Harmony Studio experience to your individual preferences and creative style. This includes customizing the user interface, suggesting relevant features, and optimizing AI-generated content to better match your artistic preferences.</p>
+
+    <h1 id="information-sharing">4. Information Sharing and Disclosure</h1>
+    
+    <p>We are committed to protecting your privacy and do not sell your personal information to third parties. Our approach to information sharing is based on necessity, transparency, and user control. We share information only in specific, limited circumstances that directly support the services you've requested or are required by law.</p>
+    
+    <h2>4.1 Third-Party Platform Integrations</h2>
+    
+    <p>When you choose to connect and share content through our platform integrations, we share only the necessary information to enable the functionality you've requested. This sharing is always subject to your explicit consent and can be controlled through your account settings.</p>
+    
+    <div class="highlight-box">
+        <strong>Your Control:</strong> You can disconnect any platform integration at any time through your account settings. Disconnecting an integration will stop future data sharing with that platform, though previously shared content may remain subject to that platform's own data retention policies.
+    </div>
+    
+    <h2>4.2 Service Providers and Partners</h2>
+    
+    <p>We work with carefully selected service providers and partners to deliver and improve our services. All third-party relationships are governed by strict data processing agreements that ensure your information is handled with the same level of protection we provide directly.</p>
+
+    <h1 id="data-security">5. Data Security and Protection</h1>
+    
+    <p>We implement comprehensive security measures designed to protect your information from unauthorized access, disclosure, alteration, and destruction. Our security approach encompasses technical safeguards, administrative controls, and physical security measures.</p>
+    
+    <div class="highlight-box">
+        <strong>Security Commitment:</strong> We implement industry-standard security measures to protect your information, including encryption, secure data transmission, and regular security audits.
+    </div>
+    
+    <h2>5.1 Technical Safeguards</h2>
+    
+    <p><strong>Encryption:</strong> All data is encrypted both in transit and at rest using AES-256 encryption standards. This ensures that your information remains protected whether it's being transmitted between systems or stored in our databases. Encryption keys are managed through secure key management systems with strict access controls.</p>
+    
+    <p><strong>Access Controls:</strong> We implement strict employee access controls with multi-factor authentication requirements for all system access. Access to user data is granted on a need-to-know basis and is regularly reviewed and updated. All access attempts are logged and monitored for unusual activity.</p>
+    
+    <h2>5.2 Data Retention and Deletion</h2>
+    
+    <p>Our data retention practices are designed to balance service functionality with privacy protection, ensuring that we retain information only as long as necessary for legitimate business purposes.</p>
+    
+    <ul>
+        <li><strong>Account Information:</strong> Retained while your account remains active and for a reasonable period after account closure</li>
+        <li><strong>Generated Music Content:</strong> Stored according to your preferences and applicable legal requirements</li>
+        <li><strong>Usage Analytics:</strong> Aggregated usage analytics data is retained for service improvement purposes</li>
+        <li><strong>Deleted Data:</strong> Securely purged from our systems within 30 days of deletion request</li>
+    </ul>
+
+    <h1 id="privacy-rights">6. Your Privacy Rights and Controls</h1>
+    
+    <p>We believe that you should have meaningful control over your personal information. Depending on your location and applicable privacy laws, you may have various rights regarding your personal information that we are committed to honoring.</p>
+    
+    <div class="rights-box">
+        <strong>🛡️ Your Rights Under Privacy Laws</strong><br><br>
+        Depending on your location, you may have the following rights regarding your personal information:
+        <ul>
+            <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+            <li><strong>Portability:</strong> Export your data in a machine-readable format</li>
+            <li><strong>Correction:</strong> Update or correct inaccurate personal information</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+            <li><strong>Restriction:</strong> Limit how we process your information</li>
+        </ul>
+    </div>
+    
+    <h2>6.1 Access and Portability Rights</h2>
+    
+    <p>You have the right to understand what personal information we hold about you and how it's being used. Our access rights include providing you with a comprehensive overview of your data, the purposes for which it's being processed, and the categories of third parties with whom it may be shared.</p>
+    
+    <h2>6.2 Control and Correction Rights</h2>
+    
+    <p>You maintain control over the accuracy and completeness of your personal information and can make changes as needed to ensure your data remains current and correct.</p>
+
+    <h1 id="snapchat-specific">7. Snapchat-Specific Privacy Considerations</h1>
+    
+    <p>Our integration with Snapchat is designed to fully comply with Snapchat's privacy requirements and developer guidelines while providing you with enhanced music sharing capabilities.</p>
+    
+    <div class="snapchat-box">
+        <strong>📱 Snapchat Integration Details</strong><br><br>
+        Our integration with Snapchat is designed to comply with Snapchat's privacy requirements and developer guidelines:
+        <ul>
+            <li><strong>Login Kit:</strong> We only access your display name and Bitmoji avatar with your explicit consent</li>
+            <li><strong>Creative Kit:</strong> Content sharing is always initiated by you and subject to your explicit consent</li>
+            <li><strong>Data Minimization:</strong> We collect only the minimum data necessary for functionality</li>
+            <li><strong>No Social Graph Recreation:</strong> We do not attempt to recreate friend connections</li>
+        </ul>
+    </div>
+    
+    <h2>7.1 Snapchat Login Kit Integration</h2>
+    
+    <p>We use Snapchat Login Kit to provide you with a convenient authentication option that leverages your existing Snapchat account. This integration is designed with privacy-first principles and minimal data collection.</p>
+    
+    <p>Our Login Kit implementation only accesses your display name and Bitmoji avatar with your explicit consent. We do not request or access your Snapchat friends list, private messages, or other sensitive account information. The authentication process is handled securely through Snapchat's official APIs, ensuring that your Snapchat credentials are never directly handled by our systems.</p>
+    
+    <h2>7.2 Snapchat Creative Kit Integration</h2>
+    
+    <p>Creative Kit integration enables you to share your generated music content directly to Snapchat with enhanced creative features. This sharing is always initiated by you and subject to your explicit consent for each piece of content you choose to share.</p>
+    
+    <p>Content shared through Creative Kit includes only the music content and associated metadata that you specifically select for sharing. We do not store or access content that you share through Snapchat, and all sharing activities are subject to Snapchat's own privacy policy and terms of service.</p>
+
+    <h1 id="international-transfers">8. International Data Transfers</h1>
+    
+    <p>Digital Harmony Studio operates as a global platform, and your information may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable privacy laws and maintain appropriate protection for your personal information regardless of where it is processed.</p>
+    
+    <h2>8.1 Transfer Mechanisms and Safeguards</h2>
+    
+    <p>We implement multiple safeguards to ensure that international data transfers maintain the same level of protection as domestic processing:</p>
+    
+    <ul>
+        <li><strong>Adequacy Decisions:</strong> Where possible, we transfer data to countries that have been determined by relevant authorities to provide adequate protection</li>
+        <li><strong>Standard Contractual Clauses:</strong> For transfers to countries without adequacy decisions, we use approved standard contractual clauses</li>
+        <li><strong>Data Processing Agreements:</strong> All service providers are bound by comprehensive data processing agreements</li>
+        <li><strong>User Consent:</strong> In some cases, we may seek your explicit consent for international transfers</li>
+    </ul>
+
+    <h1 id="children-privacy">9. Children's Privacy</h1>
+    
+    <p>We are committed to protecting the privacy of children and comply with applicable children's privacy laws, including the Children's Online Privacy Protection Act (COPPA) in the United States and similar regulations in other jurisdictions.</p>
+    
+    <div class="highlight-box">
+        <strong>Age Restriction:</strong> Our service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
+    </div>
+    
+    <p>Our age verification processes are designed to prevent children under 13 from creating accounts or using our services. If we become aware that we have collected personal information from a child under 13, we take immediate steps to delete such information and terminate any associated account.</p>
+    
+    <p>Parents or guardians who believe their child has provided us with personal information should contact us immediately at <span class="email">Digital.Harmony.Studio@icmoil.com</span>. We will promptly investigate such reports and take appropriate action to protect the child's privacy.</p>
+
+    <h1 id="cookies">10. Cookies and Tracking Technologies</h1>
+    
+    <p>We use cookies and similar tracking technologies to provide and improve our services, analyze usage patterns, and personalize your experience. Our cookie practices are designed to be transparent and provide you with meaningful choices about how these technologies are used.</p>
+    
+    <h2>10.1 Types of Cookies and Tracking Technologies</h2>
+    
+    <ul>
+        <li><strong>Essential Cookies:</strong> Necessary for basic functionality and cannot be disabled without affecting core service features</li>
+        <li><strong>Performance Cookies:</strong> Help us understand how users interact with our platform by collecting anonymous usage statistics</li>
+        <li><strong>Functional Cookies:</strong> Remember your preferences and settings to provide a more personalized experience</li>
+        <li><strong>Analytics Cookies:</strong> Provide insights into platform usage patterns and feature effectiveness</li>
+    </ul>
+    
+    <h2>10.2 Cookie Management and User Control</h2>
+    
+    <p>You have several options for controlling how cookies are used on our platform, including browser settings, our cookie preference center, and opt-out tools for certain analytics and advertising cookies.</p>
+
+    <h1 id="policy-changes">11. Changes to This Privacy Policy</h1>
+    
+    <p>We may update this privacy policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. Our approach to policy updates is designed to keep you informed and maintain transparency about our privacy practices.</p>
+    
+    <h2>11.1 Update Process and Notification</h2>
+    
+    <p>When we make changes to this privacy policy, we follow a structured process to ensure you are properly informed:</p>
+    
+    <ul>
+        <li><strong>Effective Date Updates:</strong> We update the "Last Updated" date at the top of this policy whenever changes are made</li>
+        <li><strong>Material Change Notifications:</strong> For significant changes, we provide prominent notice through our platform interface or via email</li>
+        <li><strong>Version History:</strong> We maintain previous versions of our privacy policy for your reference</li>
+        <li><strong>Continued Use Consent:</strong> Continued use of our service after policy changes constitutes acceptance of the updated policy</li>
+    </ul>
+
+    <h1 id="contact">12. Contact Information and Data Protection</h1>
+    
+    <p>We are committed to addressing your privacy questions, concerns, and requests promptly and thoroughly. Our privacy team is available to assist you with any aspect of your privacy rights or our data practices.</p>
+    
+    <h2>12.1 Contact Methods and Response Times</h2>
+    
+    <div class="highlight-box">
+        <strong>General Privacy Inquiries:</strong><br>
+        Email: <span class="email">Digital.Harmony.Studio@icmoil.com</span><br>
+        Response Time: Within 48 hours for initial response<br>
+        Full Resolution: Within 30 days for complex inquiries<br><br>
+        
+        <strong>Data Protection Officer:</strong><br>
+        Email: <span class="email">Digital.Harmony.Studio@icmoil.com</span><br>
+        Specialization: GDPR compliance and data protection matters<br>
+        Response Time: Within 72 hours for regulatory inquiries<br><br>
+        
+        <strong>Technical Support:</strong><br>
+        Email: <span class="email">Digital.Harmony.Studio@icmoil.com</span><br>
+        Focus: Account access and technical privacy controls<br>
+        Response Time: Within 24 hours for urgent technical issues
+    </div>
+    
+    <h2>12.2 Regulatory Authorities and Dispute Resolution</h2>
+    
+    <p>If you are not satisfied with our response to your privacy concerns, you have the right to lodge a complaint with your local data protection authority. We maintain cooperative relationships with privacy regulators and are committed to resolving any regulatory concerns promptly and thoroughly.</p>
+    
+    <p>For users in the European Union, you can contact your local supervisory authority or the European Data Protection Board. For users in California, you can contact the California Attorney General's office regarding privacy concerns.</p>
+    
+    <p>We encourage you to contact us directly first, as we are often able to resolve privacy concerns more quickly than formal regulatory processes.</p>
+
+    <h2>12.3 Additional Resources and Related Policies</h2>
+    
+    <p>To provide complete transparency about our practices, we maintain several related policies and resources that complement this privacy policy:</p>
+    
+    <ul>
+        <li><strong>Terms of Service:</strong> Our complete terms governing use of Digital Harmony Studio</li>
+        <li><strong>Cookie Policy:</strong> Detailed information about our cookie and tracking practices</li>
+        <li><strong>Data Processing Agreement:</strong> For business customers requiring formal data processing terms</li>
+        <li><strong>Security Practices:</strong> Technical details about our security measures and protocols</li>
+        <li><strong>AI Ethics and Transparency:</strong> Information about our AI development and deployment practices</li>
+    </ul>
+
+    <h1>13. Conclusion</h1>
+    
+    <p>This privacy policy represents our commitment to protecting your privacy while providing innovative AI-powered music generation and distribution services. We believe that privacy and innovation can coexist, and we have designed our platform to demonstrate this principle.</p>
+    
+    <p>Your trust is essential to our success, and we work continuously to earn and maintain that trust through transparent practices, robust security measures, and respect for your privacy rights. We welcome your feedback on our privacy practices and are always looking for ways to improve our protection of your personal information.</p>
+    
+    <p>By using Digital Harmony Studio, you are joining a community of creators who value both artistic expression and privacy protection. We are honored to support your creative journey while safeguarding your personal information.</p>
+
+    <!-- Footer -->
+    <div class="footer">
+        <strong>Digital Harmony Studio</strong> - AI-Powered Music Generation & Distribution<br>
+        Committed to Privacy, Innovation, and Creative Expression<br><br>
+        <em>This privacy policy is effective as of December 21, 2024, and was last updated on December 21, 2024.</em><br>
+        <em>© 2024 Digital Harmony Studio. All rights reserved.</em>
+    </div>
+</body>
+</html>
+
