@@ -5,106 +5,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Digital Harmony Studio</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        h2 { color: #555; margin-top: 30px; }
-        h3 { color: #666; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .contact { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 30px; }
+        /* Dezelfde styling als privacy.html */
+        @import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif:wght@400;700&family=Latin+Modern+Roman:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Computer Modern Serif', 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 2.5cm;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .nav-links {
+            background-color: #f8f9fa;
+            padding: 1cm;
+            border-radius: 8px;
+            margin: 1cm 0;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        
+        .nav-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            margin: 0 1cm;
+            font-weight: 500;
+            padding: 0.3cm 0.6cm;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: #e5e7eb;
+            text-decoration: underline;
+        }
+        
+        .main-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 1cm;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #3b82f6;
+            margin-bottom: 0.5cm;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .effective-date {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 1cm;
+            border-radius: 8px;
+            margin: 2cm 0;
+            box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            color: #3b82f6;
+            margin: 2cm 0 1cm 0;
+            padding-bottom: 0.3cm;
+            border-bottom: 2px solid #3b82f6;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            color: #6366f1;
+            margin: 1.5cm 0 0.8cm 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin-bottom: 0.8cm;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
+            border: 1px solid #6366f1;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #6366f1;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        ul {
+            margin: 0.5cm 0 0.8cm 2cm;
+        }
+        
+        li {
+            margin-bottom: 0.3cm;
+        }
+        
+        .email {
+            font-weight: bold;
+            color: #6366f1;
+            background-color: #f0f9ff;
+            padding: 0.1cm 0.3cm;
+            border-radius: 4px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3cm;
+            padding-top: 1cm;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1cm;
+                font-size: 10pt;
+            }
+            
+            .nav-links a {
+                display: block;
+                margin: 0.3cm 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Digital Harmony Studio - Terms of Service</h1>
-        <p><strong>Effective Date: June 23, 2025</strong></p>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="privacy.html">🔒 Privacy Policy</a>
+        <a href="learn.html">📚 Learn More</a>
+        <a href="index.html#contact">📧 Contact</a>
     </div>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using Digital Harmony Studio's services, including our AI music generation platform and Snapchat integration, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our services.</p>
-
-    <h2>2. Description of Service</h2>
-    <p>Digital Harmony Studio provides AI-powered music creation and distribution services, including:</p>
-    <ul>
-        <li>AI music generation technology</li>
-        <li>Integration with streaming platforms and social media</li>
-        <li>Snapchat integration for real-time music creation</li>
-        <li>Music distribution across 150+ platforms</li>
-        <li>Copyright-free music creation tools</li>
-    </ul>
-
-    <h2>3. User Accounts and Registration</h2>
-    <h3>3.1 Account Creation</h3>
-    <ul>
-        <li>You must provide accurate and complete information when creating an account</li>
-        <li>You are responsible for maintaining the confidentiality of your account credentials</li>
-        <li>You must be at least 13 years old to use our services</li>
-    </ul>
-
-    <h3>3.2 Account Responsibilities</h3>
-    <ul>
-        <li>You are responsible for all activities that occur under your account</li>
-        <li>You must notify us immediately of any unauthorized use of your account</li>
-        <li>We reserve the right to suspend or terminate accounts that violate these Terms</li>
-    </ul>
-
-    <h2>4. AI Music Generation and Intellectual Property</h2>
-    <h3>4.1 AI-Generated Content</h3>
-    <ul>
-        <li>Music created using our AI technology is original and copyright-free</li>
-        <li>You retain rights to music created through our platform</li>
-        <li>Our AI models are trained on legally licensed content</li>
-        <li>Generated music does not infringe on existing copyrights</li>
-    </ul>
-
-    <h2>5. Snapchat Integration</h2>
-    <h3>5.1 Third-Party Integration</h3>
-    <ul>
-        <li>Our Snapchat integration is subject to Snapchat's Terms of Service</li>
-        <li>We are not responsible for Snapchat's policies or service availability</li>
-        <li>You must comply with both our Terms and Snapchat's Terms when using the integration</li>
-    </ul>
-
-    <h3>5.2 Data Handling</h3>
-    <ul>
-        <li>We process minimal user data required for the integration</li>
-        <li>We do not store Snapchat user data beyond what's necessary for functionality</li>
-        <li>All data handling complies with applicable privacy laws</li>
-    </ul>
-
-    <h2>6. Prohibited Uses</h2>
-    <p>You may not use our services to:</p>
-    <ul>
-        <li>Create music that infringes on existing copyrights</li>
-        <li>Generate content that is illegal, harmful, or offensive</li>
-        <li>Attempt to reverse engineer our AI technology</li>
-        <li>Violate any applicable laws or regulations</li>
-        <li>Interfere with the security or functionality of our services</li>
-    </ul>
-
-    <h2>7. Limitation of Liability</h2>
-    <ul>
-        <li>Our services are provided "as is" without warranties</li>
-        <li>We do not guarantee the accuracy or quality of AI-generated content</li>
-        <li>We are not liable for any indirect, incidental, or consequential damages</li>
-        <li>Our total liability is limited to the amount you paid for services</li>
-    </ul>
-
-    <h2>8. Termination</h2>
-    <ul>
-        <li>You may terminate your account at any time</li>
-        <li>We may terminate accounts for Terms violations</li>
-        <li>Some provisions of these Terms survive termination</li>
-    </ul>
-
-    <div class="contact">
-        <h2>Contact Information</h2>
-        <p>For questions about these Terms of Service, please contact us at:</p>
-        <p><strong>Digital Harmony Studio</strong><br>
-        Email: Digital.Harmony.Studio@icmoil.com<br>
-        Website: https://digitalharmonystudio.com</p>
+    <h1 class="main-title">Terms of Service</h1>
+    <h2 class="subtitle">Digital Harmony Studio</h2>
+    
+    <div class="effective-date">
+        <strong>Effective Date: June 23, 2025</strong><br>
+        <strong>Last Updated: June 23, 2025</strong>
     </div>
 
-    <p><em>Last Updated: June 23, 2025</em></p>
-    <p>By using Digital Harmony Studio's services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
+    <h1>1. Acceptance of Terms</h1>
+    <p>By accessing and using Digital Harmony Studio's AI-powered music generation and distribution platform, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+
+    <h1>2. Description of Service</h1>
+    <p>Digital Harmony Studio provides AI-powered music generation and global distribution services. Our platform enables users to create original music content using artificial intelligence and distribute it across multiple streaming platforms and social media networks.</p>
+
+    <div class="highlight-box">
+        <strong>Service Features:</strong>
+        <ul>
+            <li>AI music generation across multiple genres</li>
+            <li>Distribution to 150+ streaming platforms</li>
+            <li>Social media integration including Snapchat</li>
+            <li>Analytics and performance tracking</li>
+        </ul>
+    </div>
+
+    <h1>3. User Accounts and Responsibilities</h1>
+    <p>Users are responsible for maintaining the confidentiality of their account information and for all activities that occur under their account. You agree to provide accurate and complete information when creating your account.</p>
+
+    <h2>3.1 Account Security</h2>
+    <p>You are responsible for safeguarding your password and all activities under your account. Notify us immediately of any unauthorized use of your account.</p>
+
+    <h2>3.2 Prohibited Uses</h2>
+    <p>You may not use our service for any illegal purposes or to violate any laws. This includes but is not limited to copyright infringement, harassment, or distribution of malicious content.</p>
+
+    <h1>4. Intellectual Property Rights</h1>
+    <p>Music generated through our AI platform belongs to the user who created it. Digital Harmony Studio retains rights to the underlying AI technology and platform infrastructure.</p>
+
+    <div class="highlight-box">
+        <strong>Your Rights:</strong>
+        <ul>
+            <li>Full ownership of AI-generated music content</li>
+            <li>Right to distribute and monetize your creations</li>
+            <li>Right to modify and adapt generated content</li>
+            <li>Right to use content for commercial purposes</li>
+        </ul>
+    </div>
+
+    <h1>5. Snapchat Integration Terms</h1>
+    <p>Our Snapchat integration is subject to additional terms and Snapchat's own policies. By using Snapchat features, you agree to comply with Snapchat's Terms of Service and Community Guidelines.</p>
+
+    <h2>5.1 Snapchat-Specific Provisions</h2>
+    <p>When sharing content through Snapchat, you acknowledge that such sharing is governed by Snapchat's terms and privacy policies in addition to our own.</p>
+
+    <h1>6. Payment and Billing</h1>
+    <p>Certain features of our service may require payment. All fees are non-refundable unless otherwise specified. We reserve the right to change our pricing with 30 days notice.</p>
+
+    <h1>7. Privacy and Data Protection</h1>
+    <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and protect your information.</p>
+
+    <h1>8. Limitation of Liability</h1>
+    <p>Digital Harmony Studio shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our service.</p>
+
+    <h1>9. Termination</h1>
+    <p>We may terminate or suspend your account at any time for violation of these terms. Upon termination, your right to use the service will cease immediately.</p>
+
+    <h1>10. Changes to Terms</h1>
+    <p>We reserve the right to modify these terms at any time. We will notify users of significant changes via email or platform notifications.</p>
+
+    <h1>11. Contact Information</h1>
+    <p>For questions about these Terms of Service, please contact us at <span class="email">Digital.Harmony.Studio@icmoil.com</span>.</p>
+
+    <div class="footer">
+        <p><strong>Digital Harmony Studio</strong> - AI-Powered Music Generation & Distribution</p>
+        <p>Email: <span class="email">Digital.Harmony.Studio@icmoil.com</span> | Platform: <a href="https://mehran0031.github.io/dh/">https://mehran0031.github.io/dh/</a></p>
+        <p>© 2025 Digital Harmony Studio. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="learn.html">Learn More</a> | <a href="index.html">Home</a></p>
+    </div>
 </body>
 </html>
