@@ -5,165 +5,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn More - Digital Harmony Studio</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        h2 { color: #555; margin-top: 30px; }
-        h3 { color: #666; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .feature-box { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0; }
-        .contact { background: #e3f2fd; padding: 15px; border-radius: 5px; margin-top: 30px; }
-        ul { margin: 10px 0; }
-        .emoji { font-size: 1.2em; }
+        /* Dezelfde styling als andere pagina's */
+        @import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif:wght@400;700&family=Latin+Modern+Roman:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Computer Modern Serif', 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 2.5cm;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .nav-links {
+            background-color: #f8f9fa;
+            padding: 1cm;
+            border-radius: 8px;
+            margin: 1cm 0;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        
+        .nav-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            margin: 0 1cm;
+            font-weight: 500;
+            padding: 0.3cm 0.6cm;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: #e5e7eb;
+            text-decoration: underline;
+        }
+        
+        .main-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 1cm;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #3b82f6;
+            margin-bottom: 0.5cm;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .tagline {
+            font-size: 1.1em;
+            color: #6b7280;
+            margin-bottom: 2cm;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            color: #3b82f6;
+            margin: 2cm 0 1cm 0;
+            padding-bottom: 0.3cm;
+            border-bottom: 2px solid #3b82f6;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            color: #6366f1;
+            margin: 1.5cm 0 0.8cm 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin-bottom: 0.8cm;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e5e7eb 100%);
+            border: 1px solid #6366f1;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #6366f1;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+        
+        .feature-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 1cm;
+            margin: 1cm 0;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+        }
+        
+        ul {
+            margin: 0.5cm 0 0.8cm 2cm;
+        }
+        
+        li {
+            margin-bottom: 0.3cm;
+        }
+        
+        .email {
+            font-weight: bold;
+            color: #6366f1;
+            background-color: #f0f9ff;
+            padding: 0.1cm 0.3cm;
+            border-radius: 4px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3cm;
+            padding-top: 1cm;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1cm;
+                font-size: 10pt;
+            }
+            
+            .nav-links a {
+                display: block;
+                margin: 0.3cm 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Digital Harmony Studio - Learn More</h1>
-        <p><strong>Revolutionizing Music Creation Through AI Technology</strong></p>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="privacy.html">🔒 Privacy Policy</a>
+        <a href="terms.html">📋 Terms of Service</a>
+        <a href="index.html#contact">📧 Contact</a>
     </div>
 
-    <h2>🎵 What is Digital Harmony Studio?</h2>
-    <p>Digital Harmony Studio is the world's first comprehensive AI-powered music creation and distribution ecosystem. We combine cutting-edge artificial intelligence with global platform integration to democratize music creation and enable anyone to produce professional-quality music instantly.</p>
+    <h1 class="main-title">Learn More</h1>
+    <h2 class="subtitle">Digital Harmony Studio</h2>
+    <p class="tagline">Discover the Future of AI-Powered Music Creation</p>
+
+    <h1>What is Digital Harmony Studio?</h1>
+    <p>Digital Harmony Studio is a revolutionary AI-powered music generation and distribution platform that empowers creators to transform their musical ideas into professional-quality tracks and share them across the globe.</p>
+
+    <div class="highlight-box">
+        <strong>Our Mission:</strong> To democratize music creation by making professional-grade music production accessible to everyone, regardless of their technical background or musical training.
+    </div>
+
+    <h1>How Our AI Music Generation Works</h1>
+    <p>Our advanced artificial intelligence system has been trained on millions of musical compositions across all genres. When you provide creative input, our AI analyzes your requirements and generates original music that matches your vision.</p>
+
+    <h2>The Generation Process</h2>
+    <p>Simply describe what you want to create - whether it's an upbeat electronic track for your workout playlist, a calming ambient piece for meditation, or a catchy pop song for your social media content. Our AI understands natural language and translates your ideas into music.</p>
 
     <div class="feature-box">
-        <h3>Core Mission</h3>
-        <p>To make high-quality music creation accessible to everyone, regardless of technical expertise or musical background, while providing comprehensive distribution across 150+ streaming platforms worldwide.</p>
-    </div>
-
-    <h2>🎼 How Our AI Music Technology Works</h2>
-    
-    <h3>Advanced AI Music Generation</h3>
-    <p>Our proprietary AI models are trained on legally licensed music datasets to create original, copyright-free compositions that sound professionally produced.</p>
-    
-    <ul>
-        <li><strong>Real-time music generation</strong> in any genre or style</li>
-        <li><strong>Mood-based creation</strong> that matches your content perfectly</li>
-        <li><strong>Customizable parameters</strong> for tempo, key, instruments, and energy</li>
-        <li><strong>Copyright-free guarantee</strong> for all generated content</li>
-    </ul>
-
-    <h3>Intelligent Content Analysis</h3>
-    <p>Our AI analyzes your content (photos, videos, text) to automatically generate music that perfectly complements your creative vision.</p>
-
-    <h2>📱 Snapchat Integration Features</h2>
-    
-    <div class="feature-box">
-        <h3>🎭 Real-Time Music Generation</h3>
+        <strong>🎵 Supported Genres & Styles:</strong>
         <ul>
-            <li>Generate music instantly while creating Snaps</li>
-            <li>AI analyzes your photo/video content for perfect musical match</li>
-            <li>Multiple genre options available within Snapchat interface</li>
-            <li>Instant preview and customization options</li>
+            <li>Electronic & EDM (House, Techno, Dubstep, Ambient)</li>
+            <li>Pop & Commercial (Radio-friendly, Catchy hooks)</li>
+            <li>Hip-Hop & Rap (Beats, Instrumentals, Trap)</li>
+            <li>Classical & Orchestral (Symphonic, Chamber music)</li>
+            <li>Jazz & Blues (Traditional, Modern, Fusion)</li>
+            <li>Rock & Alternative (Indie, Progressive, Metal)</li>
+            <li>World Music (Cultural, Traditional, Fusion)</li>
+            <li>Cinematic & Soundtrack (Film scores, Game music)</li>
         </ul>
     </div>
+
+    <h1>Global Distribution Network</h1>
+    <p>Once your music is created, we help you share it with the world through our comprehensive distribution network spanning 150+ platforms.</p>
+
+    <h2>Major Streaming Platforms</h2>
+    <p>Your music will be available on all major streaming services including Spotify, Apple Music, YouTube Music, Amazon Music, Deezer, Tidal, and many more. We handle all the technical requirements and metadata optimization for each platform.</p>
+
+    <h2>Social Media Integration</h2>
+    <p>Seamlessly share your creations on social media platforms with our integrated sharing tools. Our Snapchat integration allows you to add your AI-generated music directly to your Snaps and Stories.</p>
 
     <div class="feature-box">
-        <h3>🎨 Interactive Lenses</h3>
+        <strong>📱 Supported Platforms:</strong>
         <ul>
-            <li>Gesture-controlled music creation through AR Lenses</li>
-            <li>Hand movements control tempo, instruments, and effects</li>
-            <li>Real-time visual feedback synchronized with music generation</li>
-            <li>Shareable musical experiences with friends</li>
+            <li><strong>Streaming:</strong> Spotify, Apple Music, YouTube Music, Amazon Music, Deezer, Tidal, Pandora</li>
+            <li><strong>Social Media:</strong> Instagram, TikTok, Facebook, Twitter, Snapchat, YouTube</li>
+            <li><strong>Emerging Platforms:</strong> Web3 music platforms, NFT marketplaces, Gaming platforms</li>
+            <li><strong>Regional Services:</strong> QQ Music, NetEase, Anghami, JioSaavn, and 100+ more</li>
         </ul>
     </div>
+
+    <h1>Snapchat Integration Features</h1>
+    <p>Our Snapchat integration brings AI-generated music directly to your creative workflow on Snapchat, enabling you to enhance your Snaps and Stories with original soundtracks.</p>
+
+    <h2>Creative Kit Integration</h2>
+    <p>Through Snapchat's Creative Kit, you can access our music generation tools directly within the Snapchat app, creating custom soundtracks that perfectly match your visual content.</p>
+
+    <h2>Login Kit Authentication</h2>
+    <p>Securely connect your Digital Harmony Studio account with Snapchat using Login Kit, ensuring your music library and preferences are always accessible when creating content.</p>
+
+    <div class="highlight-box">
+        <strong>Snapchat Features:</strong>
+        <ul>
+            <li>Real-time music generation for Snaps</li>
+            <li>Mood-based soundtrack suggestions</li>
+            <li>Seamless integration with Snapchat's creative tools</li>
+            <li>Automatic sync with your Digital Harmony Studio library</li>
+        </ul>
+    </div>
+
+    <h1>Getting Started</h1>
+    <p>Ready to begin your musical journey? Getting started with Digital Harmony Studio is simple and straightforward.</p>
+
+    <h2>Step 1: Create Your Account</h2>
+    <p>Sign up for your Digital Harmony Studio account and set your music preferences. Tell us about your favorite genres, styles, and the type of content you want to create.</p>
+
+    <h2>Step 2: Generate Your First Track</h2>
+    <p>Use our intuitive interface to describe your musical vision. Our AI will generate a unique track based on your specifications, which you can then refine and customize.</p>
+
+    <h2>Step 3: Distribute Globally</h2>
+    <p>Once you're happy with your creation, use our distribution network to share it across 150+ platforms worldwide. Track your performance with our comprehensive analytics dashboard.</p>
 
     <div class="feature-box">
-        <h3>📱 Story Studio API Integration</h3>
+        <strong>🚀 Quick Start Benefits:</strong>
         <ul>
-            <li>Enhanced music options for Snapchat Stories</li>
-            <li>Automatic soundtrack generation for Story content</li>
-            <li>Cross-platform music synchronization</li>
-            <li>Professional-quality audio processing</li>
+            <li>No musical experience required</li>
+            <li>Generate professional-quality tracks in minutes</li>
+            <li>Instant global distribution</li>
+            <li>Full ownership of your creations</li>
+            <li>24/7 customer support</li>
         </ul>
     </div>
 
-    <h2>🌐 Platform Distribution Network</h2>
-    <p>Digital Harmony Studio distributes your AI-generated music across 150+ platforms, ensuring maximum exposure and monetization opportunities.</p>
+    <h1>Pricing and Plans</h1>
+    <p>We offer flexible pricing options to suit creators at every level, from hobbyists to professional musicians and content creators.</p>
 
-    <h3>Platform Categories:</h3>
-    <ul>
-        <li><strong>🎧 Traditional Streaming (45 platforms)</strong> - Spotify, Apple Music, YouTube Music, Amazon Music</li>
-        <li><strong>🌐 Web3 & Blockchain (10 platforms)</strong> - Audius, Sound.xyz, Catalog, Royal</li>
-        <li><strong>🎮 Gaming & Interactive (8 platforms)</strong> - Twitch, Discord, Roblox, Steam</li>
-        <li><strong>📱 Social Media (8 platforms)</strong> - TikTok, Instagram, YouTube, Facebook</li>
-        <li><strong>🎙️ Podcast & Audio (10 platforms)</strong> - Anchor, Castbox, Pocket Casts</li>
-    </ul>
+    <h2>Free Tier</h2>
+    <p>Get started with our free tier, which includes basic music generation capabilities and limited distribution options. Perfect for trying out our platform and creating your first tracks.</p>
 
-    <h2>✨ User Benefits</h2>
-    
-    <div class="feature-box">
-        <h3>For Content Creators</h3>
+    <h2>Professional Plans</h2>
+    <p>Upgrade to our professional plans for unlimited music generation, full distribution network access, advanced customization options, and priority support.</p>
+
+    <h1>Support and Community</h1>
+    <p>Join our growing community of creators and get the support you need to succeed with your musical projects.</p>
+
+    <div class="highlight-box">
+        <strong>Get Help:</strong>
         <ul>
-            <li>Instant music creation without musical expertise required</li>
-            <li>Copyright-free content safe for commercial use</li>
-            <li>Professional quality rivaling studio-produced music</li>
-            <li>Global distribution across all major platforms</li>
+            <li><strong>Email Support:</strong> <span class="email">Digital.Harmony.Studio@icmoil.com</span></li>
+            <li><strong>Response Time:</strong> Within 24 hours</li>
+            <li><strong>Platform:</strong> <a href="https://mehran0031.github.io/dh/">https://mehran0031.github.io/dh/</a></li>
+            <li><strong>Documentation:</strong> Comprehensive guides and tutorials</li>
         </ul>
     </div>
 
-    <div class="feature-box">
-        <h3>For Businesses</h3>
-        <ul>
-            <li>Brand-specific music tailored to company identity</li>
-            <li>Marketing automation with AI-generated soundtracks</li>
-            <li>Cost-effective alternative to licensing existing music</li>
-            <li>API integration for custom applications</li>
-        </ul>
+    <h1>Ready to Create?</h1>
+    <p>Transform your musical vision into reality with Digital Harmony Studio. Whether you're a content creator, musician, or just someone who loves music, our platform provides the tools you need to create, distribute, and succeed.</p>
+
+    <p>Contact us today to learn more about how Digital Harmony Studio can help you achieve your musical goals.</p>
+
+    <div class="footer">
+        <p><strong>Digital Harmony Studio</strong> - AI-Powered Music Generation & Distribution</p>
+        <p>Email: <span class="email">Digital.Harmony.Studio@icmoil.com</span> | Platform: <a href="https://mehran0031.github.io/dh/">https://mehran0031.github.io/dh/</a></p>
+        <p>© 2025 Digital Harmony Studio. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="index.html">Home</a></p>
     </div>
-
-    <h2>🚀 Getting Started</h2>
-    
-    <h3>For Snapchat Integration</h3>
-    <ol>
-        <li>Download the latest Snapchat app</li>
-        <li>Look for Digital Harmony Studio Lenses</li>
-        <li>Create music using gesture controls or content analysis</li>
-        <li>Share your musical Snaps with friends</li>
-        <li>Export music for use across other platforms</li>
-    </ol>
-
-    <h3>For Individual Users</h3>
-    <ol>
-        <li>Sign up for free account at digitalharmonystudio.com</li>
-        <li>Connect your social media and streaming accounts</li>
-        <li>Start creating music with our AI tools</li>
-        <li>Distribute automatically across all platforms</li>
-        <li>Monitor performance and earnings through dashboard</li>
-    </ol>
-
-    <h2>🔒 Privacy & Security</h2>
-    <ul>
-        <li><strong>Minimal data collection</strong> - only what's necessary for functionality</li>
-        <li><strong>End-to-end encryption</strong> for all user communications</li>
-        <li><strong>GDPR compliance</strong> and global privacy law adherence</li>
-        <li><strong>No data selling</strong> - your information stays private</li>
-        <li><strong>Copyright verification</strong> for all generated content</li>
-    </ul>
-
-    <div class="contact">
-        <h2>📞 Contact & Learn More</h2>
-        <p><strong>Get in Touch:</strong></p>
-        <ul>
-            <li>Email: Digital.Harmony.Studio@icmoil.com</li>
-            <li>Website: https://digitalharmonystudio.com</li>
-            <li>Developer Portal: https://api.digitalharmonystudio.com</li>
-            <li>Support Center: https://support.digitalharmonystudio.com</li>
-        </ul>
-        
-        <p><strong>Business Inquiries:</strong></p>
-        <ul>
-            <li>Partnership Opportunities: partnerships@digitalharmonystudio.com</li>
-            <li>Enterprise Solutions: enterprise@digitalharmonystudio.com</li>
-            <li>Media & Press: press@digitalharmonystudio.com</li>
-        </ul>
-    </div>
-
-    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f0f8ff; border-radius: 10px;">
-        <h3>🎵 Ready to revolutionize your music creation experience?</h3>
-        <p><strong>Start creating with Digital Harmony Studio today and join the future of AI-powered music!</strong></p>
-        <p><em>Digital Harmony Studio - Where Technology Meets Creativity</em></p>
-    </div>
-
-    <p style="text-align: center; margin-top: 20px;"><em>© 2025 Digital Harmony Studio. All rights reserved.</em></p>
 </body>
 </html>
